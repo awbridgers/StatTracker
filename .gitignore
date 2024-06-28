@@ -1,0 +1,14 @@
+node_modules
+dist
+out
+build
+.vscode
+resources
+.editorconfig
+electron-builder.yml
+package-lock.json
+.DS_Store
+.eslintignore
+.prettierignore
+.eslintrc.cjs
+*.log*
