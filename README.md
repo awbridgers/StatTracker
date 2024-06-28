@@ -3,7 +3,7 @@
 An electron based desktop app version of [live-stats-tracker](https://github.com/awbridgers/live-stats-tracker) that allows the user to save rosters and starters to their computer.
 
 ### How it works
-
+![example](https://github.com/awbridgers/StatTracker/blob/main/image.png)
 
 ### Install
 
