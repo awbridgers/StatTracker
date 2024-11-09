@@ -62,7 +62,7 @@ function App() {
         .split('\n')
         .map((line) => {
           //make sure all the lines meet the format
-          if (!/^\d+ [a-zA-z -'.]+$/.test(line)) {
+          if (!/^\d+ [a-zA-z \-'.]+$/.test(line)) {
             throw new Error('Cannot save roster due to invalid format.')
           }
           const [number, firstName, ...lastName] = line.split(' ')

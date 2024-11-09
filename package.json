@@ -1,6 +1,6 @@
 {
   "name": "stat-tracker",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Track the stats of basketball games found in play by play data.",
   "main": "./out/main/index.js",
   "author": "example.com",
