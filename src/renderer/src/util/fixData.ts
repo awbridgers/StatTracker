@@ -28,7 +28,7 @@ export const fixData = (data: string, liveStats: boolean) => {
         line.includes('END OF') ||
         (!liveStats && line.includes('--'))
       ) {
-        results.push(previous ? `${previous} ${line}` : line)
+        results.push(previous ? `${previous} ${line}`.trim() : line.trim())
         previous = ''
       } else {
         //if the line does not have the time, add it to the last line that was pushed to the array

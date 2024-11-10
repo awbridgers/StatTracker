@@ -9,6 +9,7 @@ import Alert from './components/Alert'
 import Select from 'react-select'
 import { parse } from './util/parse'
 import Results from './components/Results'
+import { calcTime } from './util/calculateTime'
 
 const initRoster = {
   men: { roster: [], liveStatsRoster: [], sideArmRoster: [] },
@@ -180,7 +181,7 @@ function App() {
           back={() => setShow(false)}
           total={calcTotal(results)}
           handleCopy={handleCopy}
-          data={results}
+          data={results.sort((a,b)=>calcTime(b.time)-calcTime(a.time))}
         />
       ) : (
         <div className="tracker">
