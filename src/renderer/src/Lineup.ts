@@ -71,7 +71,7 @@ export class Lineup {
     this.attemptedTwosAgainst = 0
     this.attemptedThreesFor = 0
     this.attemptedThreesAgainst = 0
-    this.playersString = this.players.map((x) => x.name).join('-')
+    this.playersString = this.players.map((x) => x.name).join('~')
     this.secondsPlayed = 0
   }
   addTime = (time: string) => {

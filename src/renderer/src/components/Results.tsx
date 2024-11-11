@@ -14,7 +14,7 @@ const Results = ({ data, handleCopy, total, back }: Props) => {
   const headRef = useRef<HTMLTableSectionElement | null>(null)
   const bodyRef = useRef<HTMLTableSectionElement | null>(null)
   const onCopy = () => {
-    const text = `${headRef.current?.innerText} ${bodyRef.current?.innerText}`
+    const text = `${headRef.current?.innerText}${bodyRef.current?.innerText}`
     handleCopy(text)
     setCopied(true)
   }
